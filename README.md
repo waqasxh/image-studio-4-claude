@@ -1,4 +1,4 @@
-# openai-image-4-claude
+# image-studio-4-claude
 
 A [Claude Code](https://claude.com/claude-code) plugin that generates and edits images with OpenAI's image models (`gpt-image`) from inside Claude Code.
 
@@ -31,19 +31,19 @@ Override the models with `OPENAI_IMAGE_MODEL_ECONOMY` and `OPENAI_IMAGE_MODEL_PR
 ## Install
 
 ```
-/plugin marketplace add waqasxh/openai-image-4-claude
-/plugin install openai-image-4-claude@openai-image-4-claude
+/plugin marketplace add waqasxh/image-studio-4-claude
+/plugin install image-studio-4-claude@image-studio-4-claude
 ```
 
 Or load it locally for development:
 
 ```bash
-claude --plugin-dir /path/to/openai-image-4-claude
+claude --plugin-dir /path/to/image-studio-4-claude
 ```
 
 ## Configure your API key
 
-Create `~/.config/openai-image-4-claude/.env`:
+Create `~/.config/image-studio-4-claude/.env`:
 
 ```
 OPENAI_API_KEY=sk-...

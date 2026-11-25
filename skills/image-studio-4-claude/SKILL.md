@@ -1,5 +1,5 @@
 ---
-name: openai-image-4-claude
+name: image-studio-4-claude
 description: >
   Generate or edit images using OpenAI's image models (gpt-image). Use this skill when the
   user wants to generate, create, or edit images with OpenAI, ChatGPT images, or gpt-image.
@@ -33,7 +33,7 @@ If the user is unhappy with economy output, offer premium rather than switching 
 uv sync --project "${CLAUDE_PLUGIN_ROOT}"
 ```
 
-If the key is missing, tell the user to create `~/.config/openai-image-4-claude/.env` with
+If the key is missing, tell the user to create `~/.config/image-studio-4-claude/.env` with
 `OPENAI_API_KEY=your_key` (key from https://platform.openai.com/api-keys, account needs billing
 credit; `gpt-image-1` may also require organization verification).
 

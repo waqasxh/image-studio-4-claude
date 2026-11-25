@@ -5,7 +5,7 @@ set -o pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PLUGIN_DIR="${1:-$(dirname "${SCRIPT_DIR}")}"
-HOME_ENV="${HOME}/.config/openai-image-4-claude/.env"
+HOME_ENV="${HOME}/.config/image-studio-4-claude/.env"
 ok=true
 
 is_real() { [[ -n "$1" && "$1" != "your_api_key_here" && "$1" != "your_key_here" ]]; }
@@ -24,7 +24,7 @@ elif env_file_has_key "${HOME_ENV}" || env_file_has_key "${PLUGIN_DIR}/.env"; th
   echo "[OK] OPENAI_API_KEY found in .env"
 else
   echo "[ERROR] OPENAI_API_KEY not found"
-  echo "        Create ~/.config/openai-image-4-claude/.env with OPENAI_API_KEY=your_key"
+  echo "        Create ~/.config/image-studio-4-claude/.env with OPENAI_API_KEY=your_key"
   echo "        Key: https://platform.openai.com/api-keys (needs billing credit)"
   ok=false
 fi

@@ -2,12 +2,12 @@
 """OpenAI Image Generator.
 
 Generate or edit images with OpenAI's image API (gpt-image models).
-Part of the openai-image-4-claude Claude Code plugin.
+Part of the image-studio-4-claude Claude Code plugin.
 
 Setup:
     1. Create an API key at https://platform.openai.com/api-keys (needs billing credit;
        OpenAI's image API has no free tier).
-    2. Put OPENAI_API_KEY=... in ~/.config/openai-image-4-claude/.env or export it.
+    2. Put OPENAI_API_KEY=... in ~/.config/image-studio-4-claude/.env or export it.
     3. uv sync
 
 Tiers:
@@ -168,7 +168,7 @@ def generate(
 
 
 def _load_env(script_dir: Path, base_dir: Path) -> None:
-    home_env = Path.home() / ".config" / "openai-image-4-claude" / ".env"
+    home_env = Path.home() / ".config" / "image-studio-4-claude" / ".env"
     if home_env.exists():
         load_dotenv(home_env)
     for env_path in (script_dir / ".env", base_dir / ".env"):
@@ -209,7 +209,7 @@ def main() -> int:
 
     if not os.environ.get("OPENAI_API_KEY"):
         print("Error: OPENAI_API_KEY not found in environment")
-        print("  1. Create ~/.config/openai-image-4-claude/.env with: OPENAI_API_KEY=your_key")
+        print("  1. Create ~/.config/image-studio-4-claude/.env with: OPENAI_API_KEY=your_key")
         print("  2. Or export OPENAI_API_KEY=your_key")
         print("Get a key at: https://platform.openai.com/api-keys")
         return EXIT_BAD_INPUT

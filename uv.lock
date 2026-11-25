@@ -424,7 +424,7 @@ wheels = [
 ]
 
 [[package]]
-name = "openai-image-4-claude"
+name = "image-studio-4-claude"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

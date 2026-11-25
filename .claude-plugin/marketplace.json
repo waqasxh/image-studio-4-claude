@@ -1,11 +1,11 @@
 {
-  "name": "openai-image-4-claude",
+  "name": "image-studio-4-claude",
   "owner": {
     "name": "waqasxh"
   },
   "plugins": [
     {
-      "name": "openai-image-4-claude",
+      "name": "image-studio-4-claude",
       "source": "./",
       "description": "Generate and edit images using OpenAI's image models"
     }
